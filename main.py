@@ -5,6 +5,8 @@ import numpy as np
 spiral_data = np.loadtxt('./Spiral3d.csv', 'double', delimiter=',')
 aero_data = np.loadtxt('./aerogerador.dat', 'float', delimiter='\t')
 
+X_aero
+
 fig = plt.figure()
 ax_spiral = fig.add_subplot(211, projection='3d')
 ax_spiral.scatter(spiral_data[:, 0], spiral_data[:, 1], spiral_data[:, 2], c=spiral_data[:, 3], cmap='viridis')
